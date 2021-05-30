@@ -11,10 +11,10 @@ app.use(express.json())
 let Twit = require('twit')
 
 let T = new Twit({
-  consumer_key: process.env.REACT_APP_CONSUMER_KEY,
-  consumer_secret: process.env.REACT_APP_CONSUMER_SECRET,
-  access_token: process.env.REACT_APP_ACESS_TOKEN,
-  access_token_secret: process.env.REACT_APP_ACESS_TOKEN_SECRET
+  // consumer_key: process.env.REACT_APP_CONSUMER_KEY,
+  // consumer_secret: process.env.REACT_APP_CONSUMER_SECRET,
+  // access_token: process.env.REACT_APP_ACESS_TOKEN,
+  // access_token_secret: process.env.REACT_APP_ACESS_TOKEN_SECRET
 })
 
 let twitterStream

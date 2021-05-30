@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 
 const Tweet = props => {
   const { user, text } = props.tweet
+  console.log(props.tweet)
   return (
     <Card raised centered fluid>
       <Card.Content>

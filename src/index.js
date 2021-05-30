@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { render } from 'react-dom'
 import { Provider as AlertProvider } from 'react-alert'
 import AlertTemplate from 'react-alert-template-basic'
-import App from './components/App/App'
+import App from './components/TwitterFeed/App/App'
 
 // alert cofiguration
 const options = {

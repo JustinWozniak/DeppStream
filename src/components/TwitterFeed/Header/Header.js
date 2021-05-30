@@ -8,19 +8,11 @@ const Header = props => {
     <div className='header-container'>
       <Grid className='search-container'>
         <Grid.Column width={9}>
-          <Input id='searchInput' placeholder='Search...' fluid />
+          <Input id='searchInput' placeholder='Search...' type="hidden" fluid />
         </Grid.Column>
         <Grid.Column width={7}>
-          <Button color={'teal'} fluid onClick={() => {
-            props.updateSearchTerm(document.getElementById('searchInput').value)
-          }}>Search</Button>
         </Grid.Column>
       </Grid>
-      <Message>
-        <p>
-        Enjoy the LIVE Johnny Depp Twitter Feed!!!!
-        </p>
-      </Message>
     </div>
   )
 }
