@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import App from '../TwitterFeed/App/App'
 import Home from '../../pages/Home'
+import Videos from '../Videos/index'
 import './Navbar.css'
 
 const Navbar = props => {
@@ -23,6 +24,9 @@ const Navbar = props => {
         <li>
           <Link to="/twitterFeed">Live Twitter Feed</Link>
         </li>
+        <li>
+          <Link to="/videos">Videos</Link>
+        </li>
       </ul>
 
       <hr />
@@ -32,6 +36,9 @@ const Navbar = props => {
         </Route>
         <Route path="/twitterFeed">
           <App />
+        </Route>
+        <Route path="/videos">
+          <Videos />
         </Route>
       </Switch>
     </div>
