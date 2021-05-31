@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Grid, Input, Message } from 'semantic-ui-react'
+import { Grid, Input } from 'semantic-ui-react'
 import PropTypes from 'prop-types'
 import './Header.css'
 

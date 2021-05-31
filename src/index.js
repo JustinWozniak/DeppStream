@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import { render } from 'react-dom'
 import { Provider as AlertProvider } from 'react-alert'
 import AlertTemplate from 'react-alert-template-basic'
-import App from './components/TwitterFeed/App/App'
-
+import Navbar from './components/Navbar/index'
 // alert cofiguration
 const options = {
   position: 'bottom center',
@@ -16,7 +15,7 @@ class Root extends Component {
   render () {
     return (
       <AlertProvider template={AlertTemplate} {...options}>
-        <App />
+        <Navbar />
       </AlertProvider>
     )
   }
