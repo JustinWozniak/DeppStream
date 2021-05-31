@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { withAlert } from 'react-alert'
 import socketIOClient from 'socket.io-client'
 import axios from 'axios'
-import './Twitt.css'
+import './App.css'
 
 import Header from '../Header/Header'
 import Tweet from '../Tweet/Tweet'
@@ -28,7 +28,7 @@ export class App extends Component {
       socket.on('searchTerm', (term) => {
         this.setState({ term })
         document.getElementById('searchInput').value = ''
-        // this.props.alert.show('Tracking term was updated!')
+        this.props.alert.show('Tracking term was updated!')
       })
     })
     socket.on('disconnect', () => {

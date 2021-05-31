@@ -1,15 +1,25 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
-import Navbar from './components/Navbar/Navbar';
-import { BrowserRouter as Router } from 'react-router-dom';
-class Root extends Component {
-	render() {
-		return (
-			<Router>
-				<Navbar />
-			</Router>
-		);
-	}
+import React, { Component } from 'react'
+import { render } from 'react-dom'
+import { Provider as AlertProvider } from 'react-alert'
+import AlertTemplate from 'react-alert-template-basic'
+import App from './components/TwitterFeed/App/App'
+
+// alert cofiguration
+const options = {
+  position: 'bottom center',
+  timeout: 5000,
+  offset: '30px',
+  transition: 'scale'
 }
 
-render(<Root />, document.getElementById('root'));
+class Root extends Component {
+  render () {
+    return (
+      <AlertProvider template={AlertTemplate} {...options}>
+        <App />
+      </AlertProvider>
+    )
+  }
+}
+
+render(<Root />, document.getElementById('root'))
