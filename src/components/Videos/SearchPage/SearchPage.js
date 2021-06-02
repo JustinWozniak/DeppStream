@@ -25,6 +25,7 @@ const SearchPage = (props) => {
       axios
         .get(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&type=channel&q=${searchQuery}&safeSearch=none&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`)
         .then(response => {
+          console.log(`${JSON.stringify(response)} INSIDE SEARCHPAGE`)
           createChannelRow(response.data['items'][0]);
         })
         
@@ -32,6 +33,7 @@ const SearchPage = (props) => {
         axios
         .get(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=9&type=video&q=${searchQuery}&safeSearch=none&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`)
         .then(response => {
+          console.log(`${JSON.stringify(response)} INSIDE SEARCHPAGE`)
           createVideoRows(response.data['items']);
           setIsError(false);
         })
@@ -115,16 +117,7 @@ const SearchPage = (props) => {
             {
               videoRows.map(item => {
                 return (
-                        <Link key={item.videoId} to={`/video/${item.videoId}`}>
-                          <VideoRow
-                            title={item.title}
-                            image={item.image}
-                            views={item.views}
-                            timestamp={item.timestamp}
-                            channel={item.channel}
-                            description={item.description}
-                          />
-                        </Link>
+                       <div>SEARCHPAGE</div>
                 )
               })
               

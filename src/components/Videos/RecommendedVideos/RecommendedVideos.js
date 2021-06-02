@@ -16,9 +16,11 @@ const RecommendedVideos = () => {
 
     useEffect(() => {
       axios
+      .get(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2C+id&playlistId=PLn9iVlvsA33pF_T_pUOhoPFfpEfOx0yuC&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`)
       // .get(`https://www.googleapis.com/youtube/v3/playlists?part=snippet&channelId=UCi7qOTfCYPwp2vsAat3Qo4A&maxResults=18&US&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`)
-        .get(`https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=9&regionCode=US&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`)
+        // .get(`https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=9&regionCode=US&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`)
         .then(response => {
+          console.log(`${JSON.stringify(response)} INSIDE RECOMMENDED`)
           createVideoCards(response.data.items);
         })
         .catch(error => {
@@ -28,6 +30,7 @@ const RecommendedVideos = () => {
     }, [])
 
     async function createVideoCards(videoItems) {
+      console.log(videoItems)
       let newVideoCards = [];
       for (const video of videoItems) {
         const videoId = video.id;
@@ -39,16 +42,16 @@ const RecommendedVideos = () => {
 
         const title = snippet.title;
         const image = snippet.thumbnails.medium.url;
-        const views = video.statistics.viewCount;
+        // const views = video.statistics.viewCount;
         const timestamp = DateTime.fromISO(snippet.publishedAt).toRelative();
         const channel = snippet.channelTitle;
-
+        console.log(videoCards)
         newVideoCards.push({
           videoId,
           image,
           title,
           channel,
-          views,
+          // views,
           timestamp,
           channelImage
         });
@@ -61,8 +64,8 @@ const RecommendedVideos = () => {
       console.log(isError)
       return <Alert severity="error" className='loading'>No Results found!</Alert>
     }
-    return (
-        
+     return (
+
         <div className='recommendedvideos'>
             { isLoading ? <CircularProgress className='loading' color='secondary' /> : null }
             <div className="recommendedvideos__videos">

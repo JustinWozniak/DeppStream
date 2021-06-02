@@ -19,8 +19,9 @@ const VideoPlayer = () => {
         setVideoInfo([]);
         setIsLoading(true);
         axios
-          .get(`https://www.googleapis.com/youtube/v3/videos?part=snippet%2C%20statistics&id=${videoId}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`)
+        .get(`https://www.googleapis.com/youtube/v3/playlists?part=snippet&channelId=UCi7qOTfCYPwp2vsAat3Qo4A&maxResults=18&US&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`)
           .then(response => {
+            console.log(`${JSON.stringify(response)} INSIDE VIDEOPLAYER`)
               createVideoInfo(response.data['items'][0]);
               setIsError(false);
           })
@@ -31,6 +32,7 @@ const VideoPlayer = () => {
     }, [videoId])
 
     async function createVideoInfo (video) {
+        console.log(video)
         const snippet = video.snippet;
         const stats = video.statistics;
         const channelId = snippet.channelId;
@@ -47,9 +49,9 @@ const VideoPlayer = () => {
         const title = snippet.title;
         const description = snippet.description;
         const channelTitle = snippet.channelTitle;
-        const viewCount = stats.viewCount;
-        const likeCount = stats.likeCount;
-        const dislikeCount = stats.dislikeCount;
+        // const viewCount = stats.viewCount;
+        // const likeCount = stats.likeCount;
+        // const dislikeCount = stats.dislikeCount;
 
         setVideoInfo({
             title,
@@ -57,9 +59,9 @@ const VideoPlayer = () => {
             publishedDate,
             channelTitle,
             channelImage,
-            viewCount,
-            likeCount,
-            dislikeCount,
+            // viewCount,
+            // likeCount,
+            // dislikeCount,
             subs
         });
         setIsLoading(false);
@@ -71,7 +73,7 @@ const VideoPlayer = () => {
         <div className='videoplayer'>
             <div className='videoplayer__videodetails'>
                 <div className='videoplayer__video'>
-                    {isLoading ? <CircularProgress className='loading' color='secondary'/> : <Video videoId={videoId} /> }
+                    {isLoading ? <CircularProgress className='loading' color='secondary'/> : <Video videoId={"PLn9iVlvsA33pF_T_pUOhoPFfpEfOx0yuC&index=1"} /> }
                 </div>
                 <div className='videoplayer__videoinfo'>
                     {!isLoading ? <VideoInfo
