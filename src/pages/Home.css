@@ -1,3 +1,82 @@
-.home{
-    background-color: #151719;
- }
+.main-header {
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Inter", sans-serif;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.text-color-white {
+    color: white;
+}
+
+.text-color-primary {
+    color: #5658DD;
+}
+
+.secondary-header {
+    color: white;
+    font-size: 1.5rem;
+    margin: 1%;
+    font-weight: 100;
+    text-align: center;
+}
+
+.intro-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: auto;
+    min-width: 400px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
