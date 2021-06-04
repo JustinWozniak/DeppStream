@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 import Image from '../elements/Image'
+import WhatsNew from '../pages/WhatsNew/index'
 
 const Home = (props) => {
 	return (
@@ -20,6 +21,7 @@ const Home = (props) => {
                 width={300}
                 height={504} />
           </div>
+		  <WhatsNew />
 		</div>
 	);
 };

@@ -1,0 +1,15 @@
+.split-item {
+    color: white;
+    align-items: flex-start;
+    justify-content: space-between;
+    display: flex;
+    margin: 4%;
+}
+
+/* .whats-new-images{
+    width: 50%;
+} */
+
+.text-xxs {
+    font-size: 2rem;
+}

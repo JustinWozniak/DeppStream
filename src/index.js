@@ -3,6 +3,8 @@ import { render } from 'react-dom'
 import { Provider as AlertProvider } from 'react-alert'
 import AlertTemplate from 'react-alert-template-basic'
 import Navbar from './components/Navbar/index'
+import Footer from './components/Footer/index'
+
 // alert cofiguration
 const options = {
   position: 'bottom center',
@@ -16,6 +18,7 @@ class Root extends Component {
     return (
       <AlertProvider template={AlertTemplate} {...options}>
         <Navbar />
+        <Footer />
       </AlertProvider>
     )
   }
