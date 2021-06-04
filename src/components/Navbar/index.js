@@ -8,18 +8,23 @@ import {
 import App from '../TwitterFeed/App/App'
 import Home from '../../pages/Home'
 import Videos from '../Videos/index'
+import Hamburger from '../Hamburger/index'
 import './Navbar.css'
 
 const Navbar = props => {
   return (
     <Router>
+      <Hamburger />
     <div>
       <ul className="navbar">
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/bio">Bio</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/movies">Movies</Link>
+        </li>
+        <li>
+          <Link to="/characters">Characters</Link>
         </li>
         <li>
           <Link to="/twitterFeed">Live Twitter Feed</Link>
@@ -29,7 +34,6 @@ const Navbar = props => {
         </li>
       </ul>
 
-      <hr />
       <Switch>
         <Route exact path="/">
           <Home />
