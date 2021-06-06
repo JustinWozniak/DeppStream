@@ -21,9 +21,9 @@ const WhatsNew = (props) => {
 						name Raoul Duke.
 					</p>
 				</div>
-                <div className="split-item">
+				<div className="split-item">
 					<Image
-						
+						className="whats-new-images"
 						src={require('../../images/movies/fearandloathing/raulduke.jpg')}
 						alt="Features split 01"
 					/>
@@ -48,8 +48,6 @@ const WhatsNew = (props) => {
 						className="whats-new-images"
 						src={require('../../images/bands/hollywoodvampires/hollywoodvampires.jpeg')}
 						alt="Features split 02"
-						width={528}
-						height={396}
 					/>
 				</div>
 			</div>
@@ -71,8 +69,6 @@ const WhatsNew = (props) => {
 						className="whats-new-images"
 						src={require('../../images/movies/blow/Blow.jpg')}
 						alt="Features split 03"
-						width={528}
-						height={396}
 					/>
 				</div>
 			</div>

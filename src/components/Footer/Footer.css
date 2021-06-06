@@ -1,0 +1,21 @@
+.list-reset {
+    list-style-type: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container {
+    background-color: black;
+}
+
+.footer-nav {
+    color: #4183c4;
+}
+
+.footer-copyright {
+    color: #4183c4;
+    padding: 15px;
+    font-size: 1rem;
+    text-align: center;
+}

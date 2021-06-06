@@ -10,7 +10,7 @@ const Tweet = props => {
       <Card.Content>
         <Image floated='right' size='mini' src={user.profile_image_url} />
         <Card.Header>{user.name}</Card.Header>
-        <Card.Meta><a href={`https://twitter.com/${user.screen_name}`} target='_blank'>{`@${user.screen_name}`}</a></Card.Meta>
+        <Card.Meta><a href={`https://twitter.com/${user.screen_name}`} target='_blank' without rel="noopener noreferrer">{`@${user.screen_name}`}</a></Card.Meta>
         <Card.Description>
           {text}
         </Card.Description>

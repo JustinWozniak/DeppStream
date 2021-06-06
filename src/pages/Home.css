@@ -1,4 +1,8 @@
+*{
+    overflow: revert;
+}
 .main-header {
+    margin-top: 70px;
     text-align: center;
     font-size: 4rem;
     font-family: "Inter", sans-serif;
@@ -56,10 +60,15 @@
 
 .text-color-white {
     color: white;
+    font-size: 5rem;
+    font-family: fantasy;
+    margin-top: 73px;
 }
 
 .text-color-primary {
     color: #5658DD;
+    font-size: 5rem;
+    margin-top: -41px;
 }
 
 .secondary-header {

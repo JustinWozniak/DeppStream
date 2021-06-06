@@ -6,9 +6,14 @@
     margin: 4%;
 }
 
-/* .whats-new-images{
-    width: 50%;
-} */
+.whats-new-images{
+    display: flex;
+     flex-wrap: wrap;
+     padding: 5px;
+     justify-content: flex-end;
+     max-height: 335px;
+     max-width: 490px;
+}
 
 .text-xxs {
     font-size: 2rem;

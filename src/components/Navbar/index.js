@@ -8,13 +8,12 @@ import {
 import App from '../TwitterFeed/App/App'
 import Home from '../../pages/Home'
 import Videos from '../Videos/index'
-import Hamburger from '../Hamburger/index'
+import Bio from '../../pages/Bio'
 import './Navbar.css'
 
 const Navbar = props => {
   return (
     <Router>
-      <Hamburger />
     <div>
       <ul className="navbar">
         <li>
@@ -37,6 +36,9 @@ const Navbar = props => {
       <Switch>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route path="/bio">
+          <Bio />
         </Route>
         <Route path="/twitterFeed">
           <App />

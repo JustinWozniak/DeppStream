@@ -1,6 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
 import {  BrowserRouter as Router,Link } from 'react-router-dom';
+import './Footer.css';
+
 
 const FooterNav = ({
   className,

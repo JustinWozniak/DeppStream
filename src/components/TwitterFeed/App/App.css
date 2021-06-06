@@ -1,5 +1,63 @@
 body {
   background-color: #eceff1;
+
+}
+
+.main-header-twitter{
+  margin-top: -70px;
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Inter", sans-serif;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .app-container {
@@ -12,4 +70,8 @@ body {
   padding: 0px 25px;
   overflow-y: auto;
   height: calc(100vh - 160px);
+}
+
+.loading-container{
+  background-color: white;
 }

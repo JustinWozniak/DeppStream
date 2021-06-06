@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import FooterNav from './FooterNav';
 import FooterSocial from './FooterSocial';
+import './Footer.css';
+
 
 const propTypes = {
   topOuterDivider: PropTypes.bool,
@@ -43,7 +45,7 @@ const Footer = ({
           </div>
           <div className="footer-bottom space-between text-xxs invert-order-desktop">
             <FooterNav />
-            <div className="footer-copyright">Johnny Depp In-Deppth original content is copyright 2020 by Justin Wozniak. This fansite has no official affiliation with Johnny Depp, his family or management. No copyright infringement is intended: images and articles are used without permission and are copyright of their respective owners.</div>
+            <div className="footer-copyright">Johnny Depp In-Deppth original content is copyright 2021 by Justin Wozniak. This fansite has no official affiliation with Johnny Depp, his family or management. No copyright infringement is intended: images and articles are used without permission and are copyright of their respective owners.</div>
           </div>
         </div>
       </div>
