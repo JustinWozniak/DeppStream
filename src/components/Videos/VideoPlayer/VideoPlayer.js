@@ -34,7 +34,6 @@ const VideoPlayer = () => {
     async function createVideoInfo (video) {
         console.log(video)
         const snippet = video.snippet;
-        const stats = video.statistics;
         const channelId = snippet.channelId;
         const response = await axios
                               .get(`https://www.googleapis.com/youtube/v3/channels?part=snippet%2C%20statistics&id=${channelId}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`)
