@@ -6,23 +6,29 @@
     margin: 4%;
 }
 
-.whats-new-header{
+.whats-new-header {
     font-size: 2rem;
     color: #5658DD;
 }
 
-.whats-new-secondary-header{
+.whats-new-secondary-header {
     font-size: 2rem;
     color: #9e9ec5;
 }
 
-.whats-new-paragraph{
+.whats-new-paragraph {
     color: white;
     margin-left: 5%;
     margin-right: 5%;
+    text-align: center;
 }
 
-.whats-new-images{
+.bio-image-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.whats-new-images {
     flex-wrap: wrap;
     padding: 5px;
     justify-content: flex-end;

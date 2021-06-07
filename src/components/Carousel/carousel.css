@@ -1,0 +1,14 @@
+.movies-main-cover {
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+}
+
+.carousel-wrapper{
+    /* align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center; */
+}

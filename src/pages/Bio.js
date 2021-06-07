@@ -28,15 +28,13 @@ const Bio = (props) => {
 		<div className="row">
 			<MainHeader title="Bio" />
 			<div className="col-1-of-2">
-				<h3 className="heading-tertiary u-margin-bottom-small">Like Something out of a movie...</h3>
-				<p className="paragraph">{data}</p>
+				<h3 className="whats-new-secondary-header">Like Something out of a movie...</h3>
+				<p className="whats-new-paragraph">{data}</p>
 			</div>
-			<div className="col-1-of-2">
-				<div className="composition">
+			<div className="bio-image-container">
 					<img src={babydepp} alt="Pic 1" className="composition__photo composition__photo--p1" />
 					<img src={babydepp2} alt="Pic 2" className="composition__photo composition__photo--p2" />
 					<img src={babydepp3} alt="Pic 3" className="composition__photo composition__photo--p3" />
-				</div>
 			</div>
 		</div>
 	);

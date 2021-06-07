@@ -9,6 +9,7 @@ import App from '../TwitterFeed/App/App'
 import Home from '../../pages/Home'
 import Videos from '../Videos/index'
 import Bio from '../../pages/Bio'
+import Movies from '../../pages/Movies/index'
 import './Navbar.css'
 
 const Navbar = props => {
@@ -39,6 +40,9 @@ const Navbar = props => {
         </Route>
         <Route path="/bio">
           <Bio />
+        </Route>
+        <Route path="/movies">
+          <Movies />
         </Route>
         <Route path="/twitterFeed">
           <App />
