@@ -56,33 +56,17 @@ export class App extends Component {
 		let tweetCards = tweets.map((tweet) => {
 			return <Tweet key={tweet.id} tweet={tweet} />;
 		});
-
-		if (tweetCards.length < 0) {
-			return (
-				<div className="app-container">
-					<h1 className="main-header">
-						<h6 className="text-color-white">Johnny Depp </h6>
-						<h6 className="text-color-primary">In-Deppth</h6>
-						<h6 className="text-color-primary">Live Twitter Feed</h6>
-					</h1>
-					<Header />
-					<div className="tweets-container">Please wait...Loading</div>
-				</div>
-			);
-		}
-	else {
-			return (
-				<div className="app-container">
-          <h1 className="main-header-twitter">
-						<h6 className="text-color-white">Johnny Depp </h6>
-						<h6 className="text-color-primary">In-Deppth</h6>
-						<h6 className="text-color-primary">Live Twitter Feed</h6>
-					</h1>
-					<Header term={this.state.term} updateSearchTerm={this.updateSearchTerm} />
-					<div className="tweets-container">{tweetCards}</div>
-				</div>
-			);
-		}
+		return (
+			<div className="app-container">
+				<span className="main-header-twitter">
+					<h6 className="text-color-white">Johnny Depp </h6>
+					<h6 className="text-color-primary">In-Deppth</h6>
+					<h6 className="text-color-primary">Live Twitter Feed</h6>
+				</span>
+				<Header term={this.state.term} updateSearchTerm={this.updateSearchTerm} />
+				<div className="tweets-container">{tweetCards}</div>
+			</div>
+		);
 	}
 }
 

@@ -6,13 +6,31 @@
     margin: 4%;
 }
 
+.whats-new-header{
+    font-size: 2rem;
+    color: #5658DD;
+}
+
+.whats-new-secondary-header{
+    font-size: 2rem;
+    color: #9e9ec5;
+}
+
+.whats-new-paragraph{
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 .whats-new-images{
-    display: flex;
-     flex-wrap: wrap;
-     padding: 5px;
-     justify-content: flex-end;
-     max-height: 335px;
-     max-width: 490px;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: flex-end;
+    max-height: 335px;
+    max-width: 490px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text-xxs {

@@ -11,17 +11,17 @@ const WhatsNew = (props) => {
 			<p className="secondary-header w3-container w3-center w3-animate-top">
 				Here we'll post new pages that have been made
 			</p>
-			<div className="split-item">
-				<div className="w3-container w3-center w3-animate-right" data-reveal-container=".split-item">
-					<div className="text-xxs text-color-primary fw-600 tt-u mb-8">Character Overview</div>
-					<h3 className="mt-0 mb-12">Raul Duke</h3>
-					<p>
+			<div>
+				<div className="w3-container w3-center w3-animate-right">
+					<div className="whats-new-header">Character Overview</div>
+					<h3 className="whats-new-secondary-header">Raul Duke</h3>
+					<p className="whats-new-paragraph">
 						Raoul Duke is the fictional character and antihero based on Hunter S. Thompson in his
 						autobiographical novel Fear and Loathing in Las Vegas. The book was originally written under the
 						name Raoul Duke.
 					</p>
 				</div>
-				<div className="split-item">
+				<div>
 					<Image
 						className="whats-new-images"
 						src={require('../../images/movies/fearandloathing/raulduke.jpg')}
@@ -30,20 +30,17 @@ const WhatsNew = (props) => {
 				</div>
 			</div>
 
-			<div className="split-item">
-				<div
-					className="split-item-content center-content-mobile reveal-from-right"
-					data-reveal-container=".split-item"
-				>
-					<div className="text-xxs text-color-primary fw-600 tt-u mb-8">Band Spotlight</div>
-					<h3 className="mt-0 mb-12">The Hollywood Vampires</h3>
-					<p className="m-0">
+			<div>
+				<div className="split-item-content center-content-mobile reveal-from-right">
+				<div className="whats-new-header">Band Spotlight</div>
+				<h3 className="whats-new-secondary-header">The Hollywood Vampires</h3>
+					<p className="whats-new-paragraph">
 						The Hollywood Vampires are an American rock supergroup formed in 2015 by Alice Cooper, Johnny
 						Depp, and Joe Perry to honor the music of the rock stars who died from excess in the 1970s.
 					</p>
 				</div>
 				<div />
-				<div className="split-item">
+				<div>
 					<Image
 						className="whats-new-images"
 						src={require('../../images/bands/hollywoodvampires/hollywoodvampires.jpeg')}
@@ -52,19 +49,16 @@ const WhatsNew = (props) => {
 				</div>
 			</div>
 
-			<div className="split-item">
-				<div
-					className="split-item-content center-content-mobile reveal-from-left"
-					data-reveal-container=".split-item"
-				>
-					<div className="text-xxs text-color-primary fw-600 tt-u mb-8">Movie Overview</div>
-					<h3 className="mt-0 mb-12">Blow</h3>
-					<p className="m-0">
+			<div>
+				<div>
+				<div className="whats-new-header">Movie Overview</div>
+				<h3 className="whats-new-secondary-header">Blow</h3>
+					<p className="whats-new-paragraph">
 						The story of how George Jung, along with the Medellín Cartel headed by Pablo Escobar,
 						established the American cocaine market in the 1970s in the United States.
 					</p>
 				</div>
-				<div className="split-item">
+				<div>
 					<Image
 						className="whats-new-images"
 						src={require('../../images/movies/blow/Blow.jpg')}
