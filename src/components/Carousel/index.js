@@ -96,7 +96,6 @@ class CarouselComponent extends React.Component {
 		return (
 			<Carousel
 				// autoPlay
-				infiniteLoop="true"
 				dots="false"
 				showIndicators={false}
 				interval={10000}

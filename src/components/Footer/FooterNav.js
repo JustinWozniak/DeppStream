@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import {  BrowserRouter as Router,Link } from 'react-router-dom';
+import {  BrowserRouter as Router } from 'react-router-dom';
 import './Footer.css';
 
 
