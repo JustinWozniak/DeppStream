@@ -10,6 +10,7 @@ import Home from '../../pages/Home'
 import Videos from '../Videos/index'
 import Bio from '../../pages/Bio'
 import Movies from '../../pages/Movies/index'
+import MainLogo from '../../../src/images/mainLogo.png';
 import './Navbar.css'
 
 const Navbar = props => {
@@ -17,13 +18,14 @@ const Navbar = props => {
     <Router>
     <div>
       <ul className="navbar">
+      <Link to="/"> <img className="navbar-logo" src={MainLogo} alt="Main Logo"/></Link>
         <li>
           <Link to="/bio">Bio</Link>
         </li>
         <li>
           <Link to="/movies">Movies</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/characters">Characters</Link>
         </li>
         <li>
@@ -31,7 +33,7 @@ const Navbar = props => {
         </li>
         <li>
           <Link to="/videos">Videos</Link>
-        </li>
+        </li> */}
       </ul>
 
       <Switch>

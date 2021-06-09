@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import FooterNav from './FooterNav';
 import FooterSocial from './FooterSocial';
+import MainLogo from '../../../src/images/mainLogo.png';
 import './Footer.css';
 
 
@@ -48,6 +49,7 @@ const Footer = ({
             <div className="footer-copyright">Johnny Depp In-Deppth original content is copyright 2021 by Justin Wozniak. This fansite has no official affiliation with Johnny Depp, his family or management. No copyright infringement is intended: images and articles are used without permission and are copyright of their respective owners.</div>
           </div>
         </div>
+        <img className="footer-logo" src={MainLogo} alt="Main Logo"/>
       </div>
     </footer>
   );

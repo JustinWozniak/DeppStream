@@ -7,3 +7,11 @@
 .movie-info{
     color: white;
 }
+
+.movies-loading{
+    display: block;
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-size: 2rem;
+}

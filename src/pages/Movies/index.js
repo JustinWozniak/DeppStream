@@ -6,7 +6,7 @@ import '../../components/Carousel/carousel.css'
 const Movies = (props) => {
 	return (
 		<div>
-			<MainHeader title="Johnnys Movies" />
+			<MainHeader title="Movies" />
 			<div className="carousel-wrapper">
 				<CarouselComponent />
 			</div>

@@ -1,6 +1,12 @@
 import React from 'react';
-
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Link
+  } from "react-router-dom";
 import { Carousel } from 'react-responsive-carousel';
+import Movie from '../../components/Movie/index'
 import axios from 'axios';
 import Moment from 'moment';
 import './carousel.css'
@@ -84,7 +90,8 @@ class CarouselComponent extends React.Component {
 		let datereleased = this.state.releasedates;
 		let fanPopularity = this.state.popularitys;
 		let movieIdToFetch = this.state.moviesId;
-		if (!images) return <div>Please wait while images load....</div>;
+
+		if (!images) return <div className="movies-loading">Please wait while information loads....</div>;
 
 		return (
 			<Carousel
@@ -109,6 +116,20 @@ class CarouselComponent extends React.Component {
 							<p>Movies Runtime: {this.state.runtime} mins</p>
 							<a href={this.state.homepage}>Movie Homepage</a>
 							</div>
+							<Router>
+    <div>
+      <ul>
+        {/* <li>
+          <Link to={`/movies/${originaltitle[name]}`}>More Info On: {originaltitle[name]}</Link>
+        </li> */}
+</ul>
+      <Switch>
+        <Route exact path={`/movies/${originaltitle[name]}`}>
+          <Movie movie={`${originaltitle[name]}`} />
+        </Route>
+		</Switch>
+		</div>
+  </Router>
 						</div>
 					);
 				})}
