@@ -44,10 +44,8 @@ export class App extends Component {
 				searchTerm: newTerm
 			})
 			.then(function(response) {
-				console.log(response);
 			})
 			.catch(function(error) {
-				console.log(error);
 			});
 	};
 

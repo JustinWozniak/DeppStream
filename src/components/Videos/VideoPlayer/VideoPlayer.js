@@ -21,18 +21,15 @@ const VideoPlayer = () => {
         axios
         .get(`https://www.googleapis.com/youtube/v3/playlists?part=snippet&channelId=UCi7qOTfCYPwp2vsAat3Qo4A&maxResults=18&US&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`)
           .then(response => {
-            console.log(`${JSON.stringify(response)} INSIDE VIDEOPLAYER`)
               createVideoInfo(response.data['items'][0]);
               setIsError(false);
           })
           .catch(error => {
-              console.log(error);
               setIsError(true);
           })
     }, [videoId])
 
     async function createVideoInfo (video) {
-        console.log(video)
         const snippet = video.snippet;
         const channelId = snippet.channelId;
         const response = await axios

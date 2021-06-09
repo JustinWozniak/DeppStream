@@ -3,7 +3,6 @@ import Avatar from '@material-ui/core/Avatar';
 import './VideoCard.css';
 
 const VideoCard = ({image, title, channel, views, timestamp, channelImage}) => {
-  console.log("INSIDE VIDEOCARD")
     return (
         <div className='videocard'>
           <img className='videocard__image' src={image} alt='' />

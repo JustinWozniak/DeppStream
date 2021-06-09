@@ -1,7 +1,6 @@
 import React from 'react';
 
 const MainHeader = (props) => {
-	console.log(props);
 	let { title } = props;
 	return (
 		<div className="row">

@@ -21,7 +21,7 @@ const Bio = (props) => {
 	if (isLoading) return 'Loading...';
 	if (error) return `Something went wrong: ${error.message} Johnnys Bio`;
 	if (data) {
-		console.log(data);
+
 	}
 
 	return (

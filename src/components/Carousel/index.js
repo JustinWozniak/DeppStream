@@ -100,6 +100,7 @@ class CarouselComponent extends React.Component {
 					return (
 						<div className="movies-main-cover" key={movieIdToFetch[name]}>
 							<img src={image} alt="Johnny Covers" />
+							<div className="movie-info">
 							<h1>{originaltitle[name]}</h1>
 							<h3>Status: {this.state.status}</h3>
 							<p>{moviesoverview[name]}</p>
@@ -107,6 +108,7 @@ class CarouselComponent extends React.Component {
 							<p>Movies Revenue: {this.state.revenue} Million $</p>
 							<p>Movies Runtime: {this.state.runtime} mins</p>
 							<a href={this.state.homepage}>Movie Homepage</a>
+							</div>
 						</div>
 					);
 				})}
