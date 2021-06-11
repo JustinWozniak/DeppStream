@@ -25,15 +25,15 @@ const Navbar = props => {
         <li>
           <Link to="/movies">Movies</Link>
         </li>
-        {/* <li>
+         {/* <li>
           <Link to="/characters">Characters</Link>
         </li>
         <li>
           <Link to="/twitterFeed">Live Twitter Feed</Link>
-        </li>
+        </li> */}
         <li>
           <Link to="/videos">Videos</Link>
-        </li> */}
+        </li> 
       </ul>
 
       <Switch>
